@@ -16,12 +16,25 @@
       <div class="page-header__wrapper container">
         <div class="page-header__logo logo">
           <a>
-            <img src="img/svg/logo.svg" alt="">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="">
+            </picture>
           </a>
         </div>
         <div class="page-header__info">
-          <p>info@sd.ru</p>
-          <a href="tel:+74950005252">+7 (495) 000 52 52</a>
+          <p>
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#email-icon"></use>
+            </svg>
+            <span>info@sd.ru</span>
+          </p>
+          <a href="tel:+74950005252">
+            <svg width="20" height="20">
+              <use xlink:href="img/sprite_auto.svg#phone-call-icon"></use>
+            </svg>
+            <span>+7 (495) 000 52 52</span>
+          </a>
           <button class="page-header__info-button" type="button" aria-label="заказать звонок">Заказать звонок</button>
         </div>
       </div>
