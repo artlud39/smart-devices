@@ -17,6 +17,22 @@
 
 // Blocks
 // ---------------------------------
+@import "blocks/page-header";
+@import "blocks/logo";
+
+@import "blocks/page-main";
+@import "blocks/inner";
+@import "blocks/advantage";
+@import "blocks/about";
+@import "blocks/catalog";
+@import "blocks/feedback";
+@import "blocks/form";
+
+@import "blocks/page-footer";
+@import "blocks/social";
+@import "blocks/navigation";
+@import "blocks/main-nav";
+@import "blocks/contacts";
 
 @import "blocks/btn";
 @import "blocks/modal";
