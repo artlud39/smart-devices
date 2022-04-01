@@ -1,0 +1,21 @@
+.page-footer {
+  background-color: $color-black-pearl;
+  min-height: 280px;
+  padding: 50px 0;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  gap: 160px;
+}
+
+.page-footer__inner-social-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.page-footer__inner-nav-contacts {
+  display: flex;
+  gap: 30px;
+}

@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navigation h2 {
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+}
