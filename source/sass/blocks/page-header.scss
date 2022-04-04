@@ -1,9 +1,10 @@
 .page-header {
   position: fixed;
-  background: $black-pearl-to-buttom;
+  background: $black-pearl-to-bottom;
   min-height: 120px;
   width: 100%;
   padding-top: 30px;
+  z-index: 10;
 
   @include vp-1023 {
     padding-top: 20px;

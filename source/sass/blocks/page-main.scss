@@ -1,0 +1,14 @@
+.page-main {
+  margin-top: 103px;
+  display: flex;
+  flex-direction: column;
+
+
+  @include vp-1023 {
+    margin-top: 86px;
+  }
+
+  @include vp-767 {
+    margin-top: 60px;
+  }
+}
