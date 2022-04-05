@@ -1,32 +1,23 @@
-.form {
+.modal-form {
   display: flex;
   flex-direction: column;
 }
 
-.form__personal-info-inner {
+.modal-form__personal-info-inner {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
-  padding-bottom: 20px;
-
-  @include vp-767 {
-    flex-direction: column;
-    gap: 0;
-    padding-bottom: 0;
-    align-items: center;
-  }
+  flex-direction: column;
+  align-items: center;
 }
 
-.form__input-inner {
+.modal-form__input-inner {
   display: block;
-
-  @include vp-767 {
-    width: 100%;
-  }
+  width: 100%;
+  margin-bottom: 20px;
 }
 
-.form__input-inner input {
-  width: 275px;
+.modal-form__input-inner input {
+  width: 100%;
   height: 50px;
   padding: 0 15px;
   background-color: $color-black-pearl-transparent;
@@ -39,28 +30,15 @@
   &::placeholder {
     color: $color-default-white;
   }
-
-  @include vp-1439 {
-    width: 320px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 20px;
-    width: 100%;
-  }
 }
 
-.form__textarea-inner {
-  padding-bottom: 35px;
-
-  @include vp-767 {
-    padding-bottom: 35px;
-  }
+.modal-form__textarea-inner {
+  padding-bottom: 25px;
 }
 
-.form__textarea-inner textarea {
+.modal-form__textarea-inner textarea {
   display: block;
-  width: 580px;
+  width: 100%;
   height: 155px;
   padding: 25px 15px;
   background-color: $color-black-pearl-transparent;
@@ -73,43 +51,19 @@
   &::placeholder {
     color: $color-default-white;
   }
-
-  @include vp-1439 {
-    width: 670px;
-  }
-
-  @include vp-767 {
-    min-width: 270px;
-    width: 100%;
-    height: 180px;
-  }
 }
 
-.form__agreement-wrapper {
+.modal-form__agreement-wrapper {
   display: flex;
-  align-items: flex-end;
-
-  @include vp-767 {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
+  align-items: flex-start;
+  flex-direction: column;
 }
 
-.form__agreement-inner {
+.modal-form__agreement-inner {
   order: 2;
-  padding-left: 50px;
-
-  @include vp-1439 {
-    padding-left: 85px;
-  }
-
-  @include vp-767 {
-    padding-left: 0;
-  }
 }
 
-.form__label-agreement {
+.modal-form__label-agreement {
   position: relative;
   font-size: 14px;
   line-height: 16px;
@@ -118,13 +72,10 @@
   cursor: pointer;
   display: flex;
   opacity: 0.8;
-
-  @include vp-767 {
-    margin-top: 25px;
-  }
+  margin-top: 25px;
 }
 
-.form__label-agreement::before {
+.modal-form__label-agreement::before {
   content: "";
   position: absolute;
   top: 25%;
@@ -137,7 +88,7 @@
   border-radius: 2px;
 }
 
-.form__agreement-inner input {
+.modal-form__agreement-inner input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -150,7 +101,7 @@
   clip-path: inset(100%);
 }
 
-.form__agreement-inner input:checked + label::after {
+.modal-form__agreement-inner input:checked + label::after {
   content: "";
   position: absolute;
   top: 25%;
@@ -162,15 +113,16 @@
   background-position: 0 0;
 }
 
-.form__agreement-inner input:hover + label::before,
-.form__agreement-inner input:focus + label::before {
+.modal-form__agreement-inner input:hover + label::before,
+.modal-form__agreement-inner input:focus + label::before {
   background-color: $color-black-pearl-transparent;
 }
 
-.form__button {
+.modal-form__button {
   display: inline-block;
   vertical-align: middle;
-  min-width: 265px;
+  min-width: 270px;
+  width: 100%;
   min-height: 45px;
   background-color: $color-black-pearl;
   border: none;
@@ -189,11 +141,6 @@
   &:focus {
     background-color: $color-black-pearl-transparent;
     color: $color-black-pearl;
-  }
-
-  @include vp-767 {
-    min-width: 270px;
-    width: 100%;
   }
 }
 

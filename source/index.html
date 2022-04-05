@@ -142,31 +142,38 @@
       <section class="page-main__feedback feedback" id="feedback">
         <h2 class="visually-hidden">Обратная связь</h2>
         <div class="feedback__wrapper container">
-          <div class=""></div>
+          <div class="feedback__paper-airplane">
+            <img src="img/paper-airplane-desktop.png" width="510" height="285" alt="Бумажный самолет">
+          </div>
           <div class="feedback__inner">
-            <p>Остались вопросы? Задайте их нам!</p>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <div class="feedback__form form">
-              <div class="form__input-inner">
-                <label>
-                  <input type="text" name="user-name" placeholder="Имя" required>
-                </label>
-              </div>
-              <div class="form__input-inner">
-                <label>
-                  <input type="tel" name="user-tel" placeholder="Телефон" required>
-                </label>
+            <p>Остались вопросы? Задайте их нам! <br>
+              <span>Мы проконсультируем Вас бесплатно</span>
+            </p>
+            <form class="feedback__form form" method="post" action="#">
+              <div class="form__personal-info-inner">
+                <div class="form__input-inner">
+                  <label>
+                    <input type="text" name="user-name" placeholder="Имя" required>
+                  </label>
+                </div>
+                <div class="form__input-inner">
+                  <label>
+                    <input type="tel" name="user-tel" placeholder="Телефон" required>
+                  </label>
+                </div>
               </div>
               <div class="form__textarea-inner">
                 <textarea name="" id="" cols="58" rows="15" placeholder="Ваш вопрос"></textarea>
               </div>
-              <div class="form__agreement-inner">
-                <input type="checkbox" name="agreement" id="agreement" required>
-                <label class="form__label-agreement" for="agreement">Я&nbsp;согласен на&nbsp;обработку
-                  моих&nbsp;персональных данных</label>
+              <div class="form__agreement-wrapper">
+                <div class="form__agreement-inner">
+                  <input type="checkbox" name="agreement" id="agreement" required>
+                  <label class="form__label-agreement" for="agreement">Я&nbsp;согласен на&nbsp;обработку персональных
+                    данных</label>
+                </div>
+                <button class="form__button" type="button">Задать вопрос</button>
               </div>
-              <button class="form__button" type="button">Задать вопрос</button>
-            </div>
+            </form>
           </div>
         </div>
       </section>
@@ -248,36 +255,48 @@
     </footer>
   </div>
 
-  <!-- <section class="intro">
+  <section class="intro">
       <div class="container">
-        <h1>Тестовая страница.</h1>
-        <p>На данной странице показан пример модальных окон.</p>
-        <p>Перед началом разработки не забудте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
         <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
         <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
       </div>
-    </section> -->
+  </section>
 
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <div class="modal-feedback__inner">
+          <p>Закажите звонок <br>
+            <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
+          </p>
+          <form class="modal-feedback__form modal-form" method="post" action="#">
+            <div class="modal-form__personal-info-inner">
+              <div class="modal-form__input-inner">
+                <label>
+                  <input type="text" name="user-name" placeholder="Имя" required>
+                </label>
+              </div>
+              <div class="modal-form__input-inner">
+                <label>
+                  <input type="tel" name="user-tel" placeholder="Телефон" required>
+                </label>
+              </div>
+            </div>
+            <div class="modal-form__textarea-inner">
+              <textarea name="" id="" cols="58" rows="15" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <div class="modal-form__agreement-wrapper">
+              <div class="modal-form__agreement-inner">
+                <input type="checkbox" name="agreement" id="agree" required>
+                <label class="modal-form__label-agreement" for="agree">Я&nbsp;согласен на&nbsp;обработку персональных
+                  данных</label>
+              </div>
+              <button class="modal-form__button" type="button">Задать вопрос</button>
+            </div>
+          </form>
+        </div>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="15" height="15">
             <use xlink:href="img/sprite_auto.svg#icon-close"></use>

@@ -1,4 +1,4 @@
-.feedback {
+.modal-feedback {
   padding: 170px 0 250px;
   background-color: $color-deep-sky-blue;
 
@@ -11,7 +11,7 @@
   }
 }
 
-.feedback__wrapper {
+.modal-feedback__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +24,7 @@
 
 }
 
-.feedback__paper-airplane {
+.modal-feedback__paper-airplane {
   width: max-content;
 
   @include vp-1439 {
@@ -32,12 +32,12 @@
   }
 }
 
-.feedback__paper-airplane img {
+.modal-feedback__paper-airplane img {
   width: 510px;
   height: 285px;
 }
 
-.feedback__inner {
+.modal-feedback__inner {
   display: flex;
   flex-direction: column;
   color: $color-default-white;
@@ -49,7 +49,7 @@
   }
 }
 
-.feedback__inner p {
+.modal-feedback__inner p {
   margin: 0;
   font-family: $ff-roboto-condensed;
   font-size: 36px;
@@ -62,7 +62,7 @@
 }
 }
 
-.feedback__inner span {
+.modal-feedback__inner span {
   margin: 0;
   font-family: $ff-pt-mono;
   font-size: 16px;
