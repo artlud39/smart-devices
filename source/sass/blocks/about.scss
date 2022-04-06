@@ -64,7 +64,7 @@
 }
 
 .about__inner-text {
-  max-height: 170px;
+  max-height: 172px;
   overflow: hidden;
   margin-bottom: 40px;
 
@@ -78,6 +78,10 @@
   }
 }
 
+.about__inner-text--opened {
+  max-height: fit-content;
+  overflow: visible;
+}
 
 .about__wrapper p {
   font-weight: 400;
@@ -123,6 +127,6 @@
   }
 }
 
-.about__button--opened {
+.about__button--closed {
   display: none;
 }

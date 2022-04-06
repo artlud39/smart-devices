@@ -909,9 +909,16 @@ button,
 }
 
 .about__inner-text {
-  max-height: 170px;
+  max-height: 172px;
   overflow: hidden;
   margin-bottom: 40px;
+}
+
+.about__inner-text--opened {
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  overflow: visible;
 }
 
 .about__wrapper p {
@@ -948,7 +955,7 @@ button,
   background-color: #00b2ff;
 }
 
-.about__button--opened {
+.about__button--closed {
   display: none;
 }
 
@@ -1043,8 +1050,9 @@ button,
   position: absolute;
   top: 0;
   right: 0;
-  bottom: o;
+  bottom: 0;
   left: 0;
+  z-index: 10;
 }
 
 .catalog__item p {
@@ -1901,6 +1909,10 @@ button,
     background-image: url("../img/catalog/background-item-3-tablet.png");
   }
 
+  .feedback {
+    background: #00b2ff;
+  }
+
   .feedback__wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1934,6 +1946,7 @@ button,
   }
 
   .page-header {
+    position: static;
     padding-top: 20px;
     min-height: 100px;
   }

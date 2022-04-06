@@ -1,5 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {scrollSmooth} from './modules/scroll-smooth';
+import {showText, hideText} from './modules/about';
+import {setFocus} from './modules/modal-feedback';
 
 // ---------------------------------
 
@@ -9,7 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  scrollSmooth();
+  setFocus();
   // Modules
   // ---------------------------------
 
@@ -17,6 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    showText();
+    hideText();
   });
 });
 
