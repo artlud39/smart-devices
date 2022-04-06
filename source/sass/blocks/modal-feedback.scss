@@ -1,74 +1,170 @@
 .modal-feedback {
-  padding: 170px 0 250px;
-  background-color: $color-deep-sky-blue;
-
-  @include vp-1023 {
-    padding: 50px 0 130px;
-  }
-
-  @include vp-767 {
-    padding: 50px 0 90px;
-  }
-}
-
-.modal-feedback__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 1310px;
-  justify-content: space-between;
-
-  @include vp-1439 {
-    justify-content: center;
-  }
-
-}
-
-.modal-feedback__paper-airplane {
-  width: max-content;
-
-  @include vp-1439 {
-    display: none;
-  }
-}
-
-.modal-feedback__paper-airplane img {
-  width: 510px;
-  height: 285px;
-}
-
-.modal-feedback__inner {
   display: flex;
   flex-direction: column;
   color: $color-default-white;
   font-weight: 400;
   max-width: 580px;
-
-  @include vp-1439 {
-    max-width: 670px;
-  }
 }
 
-.modal-feedback__inner p {
+.modal-feedback h2 {
   margin: 0;
   font-family: $ff-roboto-condensed;
+  font-weight: 400;
   font-size: 36px;
-  line-height: 51px;
+  line-height: 40px;
   padding-bottom: 10px;
-
-  @include vp-767 {
-    font-size: 30px;
-    line-height: 42px;
-}
 }
 
-.modal-feedback__inner span {
+.modal-feedback p {
   margin: 0;
   font-family: $ff-pt-mono;
   font-size: 16px;
-
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 19px;
+  line-height: 22px;
+  padding-bottom: 40px;
 }
+
+.modal-feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-feedback__form-personal-info-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-feedback__form-input-inner {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal-feedback__form-input-inner input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  background-color: $color-black-pearl-transparent;
+  border-radius: 3px;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  color: $color-default-white;
+  border: none;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.modal-feedback__form-textarea-inner {
+  padding-bottom: 25px;
+}
+
+.modal-feedback__form-textarea-inner textarea {
+  display: block;
+  width: 100%;
+  height: 155px;
+  padding: 25px 15px;
+  background-color: $color-black-pearl-transparent;
+  border-radius: 3px;
+  font-family: $ff-pt-mono;
+  font-size: 16px;
+  color: $color-default-white;
+  border: none;
+
+  &::placeholder {
+    color: $color-default-white;
+  }
+}
+
+.modal-feedback__form-agreement-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.modal-feedback__form-agreement-inner {
+  order: 2;
+}
+
+.modal-feedback__form-label-agreement {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-default-white;
+  padding-left: 26px;
+  cursor: pointer;
+  display: flex;
+  opacity: 0.8;
+  margin-top: 25px;
+}
+
+.modal-feedback__form-label-agreement::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-color: $color-transparent;
+  transform: translateY(-25%);
+  border: 1px solid $color-default-white;
+  border-radius: 2px;
+}
+
+.modal-feedback__form-agreement-inner input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.modal-feedback__form-agreement-inner input:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.modal-feedback__form-agreement-inner input:hover + label::before,
+.modal-feedback__form-agreement-inner input:focus + label::before {
+  background-color: $color-black-pearl-transparent;
+}
+
+.modal-feedback__form-button {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 270px;
+  width: 100%;
+  min-height: 45px;
+  background-color: $color-black-pearl;
+  border: none;
+  border-radius: 3px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-default-white;
+  padding: 0;
+  cursor: pointer;
+  order: 1;
+
+  &:hover,
+  &:focus {
+    background-color: $color-black-pearl-transparent;
+    color: $color-black-pearl;
+  }
 }

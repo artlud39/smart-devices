@@ -35,7 +35,7 @@
             </svg>
             <span>+7 (495) 000 52 52</span>
           </a>
-          <button class="page-header__info-button" type="button" aria-label="заказать звонок">Заказать звонок</button>
+          <button class="page-header__info-button" type="button" aria-label="заказать звонок" data-open-modal="feedback">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -163,7 +163,7 @@
                 </div>
               </div>
               <div class="form__textarea-inner">
-                <textarea name="" id="" cols="58" rows="15" placeholder="Ваш вопрос"></textarea>
+                <textarea name="question" cols="58" rows="15" placeholder="Ваш вопрос"></textarea>
               </div>
               <div class="form__agreement-wrapper">
                 <div class="form__agreement-inner">
@@ -255,50 +255,42 @@
     </footer>
   </div>
 
-  <section class="intro">
-      <div class="container">
-        <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-        <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-      </div>
-  </section>
-
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
-        <div class="modal-feedback__inner">
-          <p>Закажите звонок <br>
-            <span>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</span>
-          </p>
-          <form class="modal-feedback__form modal-form" method="post" action="#">
-            <div class="modal-form__personal-info-inner">
-              <div class="modal-form__input-inner">
+        <div class="modal-feedback">
+          <h2>Закажите звонок </h2>
+          <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+          <form class="modal-feedback__form" method="post" action="#">
+            <div class="modal-feedback__form-personal-info-inner">
+              <div class="modal-feedback__form-input-inner">
                 <label>
                   <input type="text" name="user-name" placeholder="Имя" required>
                 </label>
               </div>
-              <div class="modal-form__input-inner">
+              <div class="modal-feedback__form-input-inner">
                 <label>
                   <input type="tel" name="user-tel" placeholder="Телефон" required>
                 </label>
               </div>
             </div>
-            <div class="modal-form__textarea-inner">
-              <textarea name="" id="" cols="58" rows="15" placeholder="Ваш вопрос"></textarea>
+            <div class="modal-feedback__form-textarea-inner">
+              <textarea name="question" cols="58" rows="15" placeholder="Ваш вопрос"></textarea>
             </div>
-            <div class="modal-form__agreement-wrapper">
-              <div class="modal-form__agreement-inner">
+            <div class="modal-feedback__form-agreement-wrapper">
+              <div class="modal-feedback__form-agreement-inner">
                 <input type="checkbox" name="agreement" id="agree" required>
-                <label class="modal-form__label-agreement" for="agree">Я&nbsp;согласен на&nbsp;обработку персональных
+                <label class="modal-feedback__form-label-agreement" for="agree">Я&nbsp;согласен на&nbsp;обработку персональных
                   данных</label>
               </div>
-              <button class="modal-form__button" type="button">Задать вопрос</button>
+              <button class="modal-feedback__form-button" type="button">Отправить</button>
             </div>
           </form>
         </div>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
+          <svg width="20" height="20">
             <use xlink:href="img/sprite_auto.svg#icon-close"></use>
           </svg>
         </button>
