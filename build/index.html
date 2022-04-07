@@ -35,7 +35,8 @@
             </svg>
             <span>+7 (495) 000 52 52</span>
           </a>
-          <button class="page-header__info-button" type="button" aria-label="заказать звонок" data-open-modal="feedback">Заказать звонок</button>
+          <button class="page-header__info-button" type="button" aria-label="заказать звонок"
+            data-open-modal="feedback">Заказать звонок</button>
         </div>
       </div>
     </header>
@@ -109,7 +110,8 @@
               внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших
               клиентов</p>
           </div>
-          <button class="about__button about__button--opened" type="button" aria-label="Открыть текст">Подробнее</button>
+          <button class="about__button about__button--opened" type="button"
+            aria-label="Открыть текст">Подробнее</button>
           <button class="about__button about__button--closed" type="button" aria-label="Закрыть текст">Свернуть</button>
         </div>
       </section>
@@ -148,7 +150,7 @@
             <p>Остались вопросы? Задайте их нам! <br>
               <span>Мы проконсультируем Вас бесплатно</span>
             </p>
-            <form class="feedback__form form" method="post" action="#">
+            <form class="feedback__form form" action="#" method="post">
               <div class="form__personal-info-inner">
                 <div class="form__input-inner">
                   <label>
@@ -157,7 +159,8 @@
                 </div>
                 <div class="form__input-inner">
                   <label>
-                    <input type="tel" name="user-tel" placeholder="Телефон" required>
+                    <input type="tel" name="user-tel" placeholder="Телефон" pattern="^[+0-9]*$"
+                      title="Можно вводить только числа" required>
                   </label>
                 </div>
               </div>
@@ -170,17 +173,18 @@
                   <label class="form__label-agreement" for="agreement">Я&nbsp;согласен на&nbsp;обработку персональных
                     данных</label>
                 </div>
-                <button class="form__button" type="button">Задать вопрос</button>
+                <button class="form__button" type="submit">Задать вопрос</button>
               </div>
             </form>
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper container">
-        <div class="page-footer__inner-social-logo">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__inner-social-logo container">
           <div class="page-footer__logo logo">
             <a>
               <img src="img/svg/logo.svg" alt="">
@@ -210,8 +214,8 @@
           </div>
         </div>
         <div class="page-footer__inner-nav-contacts">
-          <div class="page-footer__navigation navigation">
-            <h2 class="navigation__title">Разделы сайта</h2>
+          <div class="page-footer__navigation navigation container">
+              <h2 class="navigation__title">Разделы сайта</h2>
             <nav class="navigation__main-nav main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
@@ -238,8 +242,8 @@
               </ul>
             </nav>
           </div>
-          <div class="page-footer__contacts contacts">
-            <h2 class="">Наш офис</h2>
+          <div class="page-footer__contacts contacts container">
+            <h2 class="contacts__title">Наш офис</h2>
             <ul class="contacts__list">
               <li class="contacts__item">
                 <p>г. Мытищи, Олимпийский проспект, д.10</p>
@@ -266,7 +270,7 @@
             <div class="modal-feedback__form-personal-info-inner">
               <div class="modal-feedback__form-input-inner">
                 <label>
-                  <input type="text" name="user-name" placeholder="Имя" required  data-user-name>
+                  <input type="text" name="user-name" placeholder="Имя" required data-user-name>
                 </label>
               </div>
               <div class="modal-feedback__form-input-inner">
@@ -281,10 +285,11 @@
             <div class="modal-feedback__form-agreement-wrapper">
               <div class="modal-feedback__form-agreement-inner">
                 <input type="checkbox" name="agreement" id="agree" required>
-                <label class="modal-feedback__form-label-agreement" for="agree">Я&nbsp;согласен на&nbsp;обработку персональных
+                <label class="modal-feedback__form-label-agreement" for="agree">Я&nbsp;согласен на&nbsp;обработку
+                  персональных
                   данных</label>
               </div>
-              <button class="modal-feedback__form-button" type="button">Отправить</button>
+              <button class="modal-feedback__form-button" type="submit">Отправить</button>
             </div>
           </form>
         </div>

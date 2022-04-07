@@ -1329,6 +1329,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 160px;
+  max-width: 1310px;
 }
 
 .page-footer__inner-social-logo {
@@ -1349,6 +1350,11 @@ button,
   gap: 30px;
 }
 
+.page-footer__logo img {
+  width: 215px;
+  height: 55px;
+}
+
 .social__list {
   margin: 0;
   padding: 0;
@@ -1365,6 +1371,7 @@ button,
 }
 
 .navigation {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1377,30 +1384,30 @@ button,
 
 .navigation h2 {
   margin: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  position: relative;
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  gap: 10px 30px;
-  height: 130px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 220px 220px;
+  grid-template-columns: 220px 220px;
+  -ms-grid-rows: (-webkit-min-content)[4];
+  -ms-grid-rows: (min-content)[4];
+  grid-template-rows: repeat(4, -webkit-min-content);
+  grid-template-rows: repeat(4, min-content);
+  grid-auto-flow: column;
+  gap: 5px 30px;
 }
 
 .main-nav__item {
@@ -1408,7 +1415,7 @@ button,
 }
 
 .main-nav__link {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1433,6 +1440,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1442,13 +1450,14 @@ button,
 
 .contacts h2 {
   margin: 0;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #ffffff;
+  position: relative;
 }
 
 .contacts__list {
@@ -1459,7 +1468,7 @@ button,
 
 .contacts__item p,
 .contacts__item a {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1938,6 +1947,32 @@ button,
   .form__agreement-inner {
     padding-left: 85px;
   }
+
+  .page-footer__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .page-footer__inner-social-logo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 30px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .page-footer__inner-nav-contacts {
+    gap: 130px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2058,6 +2093,21 @@ button,
 
   .feedback {
     padding: 50px 0 130px;
+  }
+
+  .page-footer__inner-nav-contacts {
+    gap: 130px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .main-nav__list {
+    -ms-grid-columns: 220px;
+    grid-template-columns: 220px;
+    -ms-grid-rows: none;
+    grid-template-rows: none;
+    grid-auto-flow: row;
   }
 }
 
@@ -2288,6 +2338,163 @@ button,
   .form__button {
     min-width: 270px;
     width: 100%;
+  }
+
+  .page-footer__wrapper {
+    gap: 0;
+  }
+
+  .page-footer__inner-social-logo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
+  .page-footer__inner-nav-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .page-footer__logo img {
+    width: 215px;
+    height: 55px;
+  }
+
+  .is-active::after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  .is-open ul {
+    display: -ms-grid;
+    display: grid;
+  }
+
+  .navigation {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 0;
+    border-top: 1px solid rgba(248, 253, 255, 0.7);
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .navigation::before,
+  .navigation::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: 26px;
+    width: 15px;
+    height: 1px;
+    background-color: #f2f5f7;
+  }
+
+  .navigation::after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .navigation__title-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .navigation h2 {
+    padding: 20px 0;
+  }
+
+  .navigation h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .navigation ul {
+    display: none;
+  }
+
+  .is-active::after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  .is-open ul {
+    display: -ms-grid;
+    display: grid;
+  }
+
+  .contacts {
+    gap: 0;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
+
+  .contacts::before,
+  .contacts::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    right: 26px;
+    width: 15px;
+    height: 1px;
+    background-color: #f2f5f7;
+  }
+
+  .contacts::after {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  .contacts h2 {
+    padding: 20px 0;
+  }
+
+  .contacts h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  .contacts ul {
+    display: none;
+  }
+
+  .is-active::after {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  .is-open ul {
+    display: -ms-grid;
+    display: grid;
   }
 
   .modal__wrapper {

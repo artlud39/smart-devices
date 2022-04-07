@@ -1,18 +1,54 @@
 .contacts {
   display: flex;
+  position: relative;
   flex-direction: column;
   gap: 10px;
+
+  @include vp-767 {
+    gap: 0;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 26px;
+      width: 15px;
+      height: 1px;
+      background-color: $color-alice-blue;
+    }
+
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
 }
 
 .contacts h2 {
   margin: 0;
-  font-family: 'Roboto Condensed';
+  font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 15px;
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-default-white;
+  position: relative;
+
+  @include vp-767 {
+    padding: 20px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+    }
+  }
 }
 
 .contacts__list {
@@ -23,7 +59,7 @@
 
 .contacts__item p,
 .contacts__item a {
-  font-family: 'PT Mono';
+  font-family: $ff-pt-mono;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -36,5 +72,28 @@
   &:hover,
   &:focus {
     color: $color-default-white;
+  }
+}
+
+.contacts ul {
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.is-active {
+
+  @include vp-767 {
+    &::after {
+      transform: rotate(0);
+    }
+  }
+}
+
+.is-open ul {
+
+  @include vp-767 {
+    display: grid;
   }
 }

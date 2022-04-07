@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {scrollSmooth} from './modules/scroll-smooth';
 import {showText, hideText} from './modules/about';
 import {setFocus} from './modules/modal-feedback';
+import {showMenu, showContacts} from './modules/according-footer';
 
 // ---------------------------------
 
@@ -23,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initModals();
     showText();
     hideText();
+    showMenu();
+    showContacts();
   });
 });
 
