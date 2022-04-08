@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
+  padding-right: 47px;
+  min-height: 880px;
 
   @include vp-1023 {
     min-height: 540px;
@@ -26,8 +28,8 @@
 .inner__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  margin-top: 185px;
+  gap: 33px;
+  margin: 303px auto 0;
   max-width: 900px;
 
   @include vp-1023 {
@@ -68,6 +70,7 @@
   line-height: 34px;
   color: $color-alice-blue;
   margin: 0;
+  padding-bottom: 15px;
 
   @include vp-1023 {
     padding-bottom: 50px;

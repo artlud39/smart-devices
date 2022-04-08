@@ -7,6 +7,7 @@
   @include vp-767 {
     gap: 0;
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    padding: 0 25px;
 
     &::before,
     &::after {
@@ -55,6 +56,10 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @include vp-767 {
+    padding-bottom: 20px;
+  }
 }
 
 .contacts__item p,
