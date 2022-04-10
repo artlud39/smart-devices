@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 
   @include vp-767 {
     gap: 0;
@@ -38,7 +38,7 @@
   position: relative;
 
   @include vp-767 {
-    padding: 20px 0;
+    padding: 22px 0;
 
     &::before {
       content: "";
@@ -58,17 +58,26 @@
   list-style-type: none;
 
   @include vp-767 {
-    padding-bottom: 20px;
+    padding-bottom: 6px;
   }
+}
+
+.contacts__item {
+  padding-bottom: 6px;
 }
 
 .contacts__item p,
 .contacts__item a {
+  margin: 0;
   font-family: $ff-pt-mono;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
+
+  @include vp-767 {
+    font-size: 14px;
+  }
 }
 
 .contacts__item a  {
@@ -77,6 +86,10 @@
   &:hover,
   &:focus {
     color: $color-default-white;
+  }
+
+  @include vp-767 {
+    line-height: 25px;
   }
 }
 

@@ -11,6 +11,7 @@
     position: static;
     padding-top: 20px;
     min-height: 100px;
+    padding-right: 0;
   }
 
   @include vp-767 {
@@ -28,11 +29,14 @@
 
   @include vp-1023 {
     align-items: flex-start;
+    padding: 0 50px;
+    padding-right: 70px;
   }
 
   @include vp-767 {
-    gap: 124px;
+    gap: 115px;
     align-items: center;
+    padding-right: 34px;
   }
 }
 
@@ -41,6 +45,10 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  @include vp-1439 {
+    gap: 20px;
+  }
 
   @include vp-1023 {
     justify-content: flex-end;
@@ -53,6 +61,15 @@
   justify-content: space-between;
   max-width: 480px;
   width: 100%;
+
+  @include vp-1439 {
+    gap: 20px;
+  }
+
+  @include vp-1023 {
+    max-width: fit-content;
+    gap: 20px;
+   }
 }
 
 .page-header__info p,
@@ -72,6 +89,7 @@
 
   @include vp-1023 {
    padding: 10px;
+   max-width: fit-content;
   }
 
   @include vp-767 {

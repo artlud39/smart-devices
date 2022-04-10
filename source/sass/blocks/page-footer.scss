@@ -2,6 +2,14 @@
   background-color: $color-black-pearl;
   min-height: 280px;
   padding: 50px 0;
+
+  @include vp-1023 {
+    padding: 50px 0 65px;
+  }
+
+  @include vp-767 {
+    padding: 35px 0 65px;
+  }
 }
 
 .page-footer__wrapper {
@@ -14,10 +22,11 @@
   @include vp-1439 {
     flex-direction: column;
     gap: 35px;
+    max-width: 970px;
   }
 
   @include vp-1023 {
-
+    max-width: 770px;
   }
 
   @include vp-767 {
@@ -45,12 +54,21 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
+    gap: 0;
+  }
+}
+
+.page-footer__logo {
+
+  @include vp-767 {
+    padding-bottom: 13px;
   }
 }
 
 .page-footer__inner-nav-contacts {
   display: flex;
   gap: 30px;
+  padding-top: 8px;
 
   @include vp-1439 {
     gap: 130px;
@@ -60,7 +78,7 @@
   @include vp-1023 {
     gap: 130px;
     justify-content: space-between;
-
+    padding-top: 0;
   }
 
   @include vp-767 {

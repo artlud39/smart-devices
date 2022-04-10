@@ -8,10 +8,6 @@
   grid-auto-flow: column;
   gap: 5px 30px;
 
-  @include vp-1439 {
-
-  }
-
   @include vp-1023 {
     grid-template-columns: 220px;
     grid-template-rows: none;
@@ -46,5 +42,10 @@
   &:hover,
   &:focus {
     color: $color-default-white;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
