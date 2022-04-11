@@ -4,6 +4,7 @@ import {scrollSmooth} from './modules/scroll-smooth';
 import {showText, hideText} from './modules/about';
 import {setFocus} from './modules/modal-feedback';
 import {showMenu, showContacts} from './modules/according-footer';
+import {setMaskTel} from './modules/mask-tel';
 
 // ---------------------------------
 
@@ -15,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   scrollSmooth();
   setFocus();
+  setMaskTel();
+
   // Modules
   // ---------------------------------
 
