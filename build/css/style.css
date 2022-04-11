@@ -426,7 +426,7 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -683,7 +683,7 @@ button,
 
 .page-header__info p,
 .page-header__info a {
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   position: relative;
   margin: 0;
   font-weight: 400;
@@ -1152,7 +1152,7 @@ button,
 
 .feedback__inner p {
   margin: 0;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-size: 16px;
   padding-bottom: 31px;
 }
@@ -1188,7 +1188,7 @@ button,
   padding: 0 15px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-size: 16px;
   color: #ffffff;
   border: none;
@@ -1225,7 +1225,7 @@ button,
   padding: 25px 15px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-size: 16px;
   color: #ffffff;
   border: none;
@@ -1451,7 +1451,7 @@ button,
 }
 
 .main-nav__link {
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1509,7 +1509,7 @@ button,
 .contacts__item p,
 .contacts__item a {
   margin: 0;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1684,7 +1684,7 @@ button,
 
 .modal-feedback p {
   margin: 0;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-size: 16px;
   line-height: 22px;
   padding-bottom: 40px;
@@ -1728,7 +1728,7 @@ button,
   padding: 0 15px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-size: 16px;
   color: #ffffff;
   border: none;
@@ -1765,7 +1765,7 @@ button,
   padding: 25px 15px;
   background-color: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Roboto Mono", monospace;
   font-size: 16px;
   color: #ffffff;
   border: none;
