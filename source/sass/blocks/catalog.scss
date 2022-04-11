@@ -17,7 +17,7 @@
   flex-direction: column;
   gap: 50px;
 
-  @include vp-1439  {
+  @include vp-1439 {
     max-width: 770px;
   }
 
@@ -31,7 +31,7 @@
   }
 }
 
-.catalog__wrapper  p {
+.catalog__wrapper p {
   font-family: $ff-roboto-condensed;
   font-weight: 400;
   font-size: 36px;
@@ -104,7 +104,7 @@
     width: 60px;
     height: 60px;
     background-color: $color-deep-sky-blue;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 3px 0 0 0;
   }
 
   &::after {
@@ -139,7 +139,7 @@
     &::before {
       width: 40px;
       height: 40px;
-      border-radius: 3px 0px 0px 0px;
+      border-radius: 3px 0 0 0;
     }
 
     &::after {
@@ -155,6 +155,9 @@
 
 .catalog__item p {
   padding-right: 40%;
+  font-family: $ff-roboto-condensed;
+  font-size: 20px;
+  line-height: 30px;
 
   @include vp-1023 {
     padding-right: 75%;
@@ -169,42 +172,95 @@
 
 .catalog__item--one {
   background-image: url("../img/catalog/background-item-1-desktop.png");
+  background-image: image-set(
+    url("../img/catalog/background-item-1-desktop.webp") 1x,
+    url("../img/catalog/background-item-1-desktop@2x.webp") 2x,
+    url("../img/catalog/background-item-1-desktop.png") 1x,
+    url("../img/catalog/background-item-1-desktop@2x.png") 2x
+    );
 
   @include vp-1439 {
     background-image: url("../img/catalog/background-item-1-tablet.png");
+    background-image: image-set(
+      url("../img/catalog/background-item-1-tablet.webp") 1x,
+      url("../img/catalog/background-item-1-tablet@2x.webp") 2x,
+      url("../img/catalog/background-item-1-tablet.png") 1x,
+      url("../img/catalog/background-item-1-tablet@2x.png") 2x
+      );
   }
 
   @include vp-767 {
     background-image: url("../img/catalog/background-item-1-mobile.png");
+    background-image: image-set(
+      url("../img/catalog/background-item-1-mobile.webp") 1x,
+      url("../img/catalog/background-item-1-mobile@2x.webp") 2x,
+      url("../img/catalog/background-item-1-mobile.png") 1x,
+      url("../img/catalog/background-item-1-mobile@2x.png") 2x
+      );
   }
 }
 
 .catalog__item--two {
   background-image: url("../img/catalog/background-item-2-desktop.png");
+  background-image: image-set(
+    url("../img/catalog/background-item-2-desktop.webp") 1x,
+    url("../img/catalog/background-item-2-desktop@2x.webp") 2x,
+    url("../img/catalog/background-item-2-desktop.png") 1x,
+    url("../img/catalog/background-item-2-desktop@2x.png") 2x
+    );
 
   @include vp-1439 {
     background-image: url("../img/catalog/background-item-2-tablet.png");
+    background-image: image-set(
+      url("../img/catalog/background-item-2-tablet.webp") 1x,
+      url("../img/catalog/background-item-2-tablet@2x.webp") 2x,
+      url("../img/catalog/background-item-2-tablet.png") 1x,
+      url("../img/catalog/background-item-2-tablet@2x.png") 2x
+      );
   }
 
   @include vp-767 {
     background-image: url("../img/catalog/background-item-2-mobile.png");
+    background-image: image-set(
+      url("../img/catalog/background-item-2-mobile.webp") 1x,
+      url("../img/catalog/background-item-2-mobile@2x.webp") 2x,
+      url("../img/catalog/background-item-2-mobile.png") 1x,
+      url("../img/catalog/background-item-2-mobile@2x.png") 2x
+      );
   }
 }
 
 .catalog__item--three {
   background-image: url("../img/catalog/background-item-3-desktop.png");
+  background-image: image-set(
+    url("../img/catalog/background-item-3-desktop.webp") 1x,
+    url("../img/catalog/background-item-3-desktop@2x.webp") 2x,
+    url("../img/catalog/background-item-3-desktop.png") 1x,
+    url("../img/catalog/background-item-3-desktop@2x.png") 2x
+    );
 
   @include vp-1439 {
     background-image: url("../img/catalog/background-item-3-tablet.png");
+    background-image: image-set(
+      url("../img/catalog/background-item-3-tablet.webp") 1x,
+      url("../img/catalog/background-item-3-tablet@2x.webp") 2x,
+      url("../img/catalog/background-item-3-tablet.png") 1x,
+      url("../img/catalog/background-item-3-tablet@2x.png") 2x
+      );
   }
 
   @include vp-767 {
     background-image: url("../img/catalog/background-item-3-mobile.png");
+    background-image: image-set(
+      url("../img/catalog/background-item-3-mobile.webp") 1x,
+      url("../img/catalog/background-item-3-mobile@2x.webp") 2x,
+      url("../img/catalog/background-item-3-mobile.png") 1x,
+      url("../img/catalog/background-item-3-mobile@2x.png") 2x
+      );
   }
 }
 
 .catalog__item a {
-
   &::before {
     content: "";
     position: absolute;
@@ -214,10 +270,4 @@
     left: 0;
     z-index: 10;
   }
-}
-
-.catalog__item p {
-  font-family: $ff-roboto-condensed;
-  font-size: 20px;
-  line-height: 30px;
 }

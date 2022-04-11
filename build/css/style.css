@@ -712,7 +712,7 @@ button,
   vertical-align: middle;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -752,13 +752,13 @@ button,
 }
 
 .inner {
-  min-height: 760px;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-desktop.png");
   background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-desktop.png");
   background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-desktop.png");
+  background-image: -webkit-image-set(url("../img/background-desktop.webp") 1x, url("../img/background-desktop@2x.webp") 2x, url("../img/background-desktop.png") 1x, url("../img/background-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/background-desktop.webp") 1x, url("../img/background-desktop@2x.webp") 2x, url("../img/background-desktop.png") 1x, url("../img/background-desktop@2x.png") 2x);
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: 0 0;
   padding-right: 47px;
   min-height: 880px;
@@ -801,7 +801,7 @@ button,
   display: inline-block;
   vertical-align: middle;
   background-color: #00b2ff;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.05em;
@@ -1047,7 +1047,7 @@ button,
   width: 60px;
   height: 60px;
   background-color: #00b2ff;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 }
 
 .catalog__item::after {
@@ -1066,18 +1066,27 @@ button,
 
 .catalog__item p {
   padding-right: 40%;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .catalog__item--one {
   background-image: url("../img/catalog/background-item-1-desktop.png");
+  background-image: -webkit-image-set(url("../img/catalog/background-item-1-desktop.webp") 1x, url("../img/catalog/background-item-1-desktop@2x.webp") 2x, url("../img/catalog/background-item-1-desktop.png") 1x, url("../img/catalog/background-item-1-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/catalog/background-item-1-desktop.webp") 1x, url("../img/catalog/background-item-1-desktop@2x.webp") 2x, url("../img/catalog/background-item-1-desktop.png") 1x, url("../img/catalog/background-item-1-desktop@2x.png") 2x);
 }
 
 .catalog__item--two {
   background-image: url("../img/catalog/background-item-2-desktop.png");
+  background-image: -webkit-image-set(url("../img/catalog/background-item-2-desktop.webp") 1x, url("../img/catalog/background-item-2-desktop@2x.webp") 2x, url("../img/catalog/background-item-2-desktop.png") 1x, url("../img/catalog/background-item-2-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/catalog/background-item-2-desktop.webp") 1x, url("../img/catalog/background-item-2-desktop@2x.webp") 2x, url("../img/catalog/background-item-2-desktop.png") 1x, url("../img/catalog/background-item-2-desktop@2x.png") 2x);
 }
 
 .catalog__item--three {
   background-image: url("../img/catalog/background-item-3-desktop.png");
+  background-image: -webkit-image-set(url("../img/catalog/background-item-3-desktop.webp") 1x, url("../img/catalog/background-item-3-desktop@2x.webp") 2x, url("../img/catalog/background-item-3-desktop.png") 1x, url("../img/catalog/background-item-3-desktop@2x.png") 2x);
+  background-image: image-set(url("../img/catalog/background-item-3-desktop.webp") 1x, url("../img/catalog/background-item-3-desktop@2x.webp") 2x, url("../img/catalog/background-item-3-desktop.png") 1x, url("../img/catalog/background-item-3-desktop@2x.png") 2x);
 }
 
 .catalog__item a::before {
@@ -1088,12 +1097,6 @@ button,
   bottom: 0;
   left: 0;
   z-index: 10;
-}
-
-.catalog__item p {
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
 }
 
 .feedback {
@@ -1107,9 +1110,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1958,14 +1958,20 @@ button,
 
   .catalog__item--one {
     background-image: url("../img/catalog/background-item-1-tablet.png");
+    background-image: -webkit-image-set(url("../img/catalog/background-item-1-tablet.webp") 1x, url("../img/catalog/background-item-1-tablet@2x.webp") 2x, url("../img/catalog/background-item-1-tablet.png") 1x, url("../img/catalog/background-item-1-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/catalog/background-item-1-tablet.webp") 1x, url("../img/catalog/background-item-1-tablet@2x.webp") 2x, url("../img/catalog/background-item-1-tablet.png") 1x, url("../img/catalog/background-item-1-tablet@2x.png") 2x);
   }
 
   .catalog__item--two {
     background-image: url("../img/catalog/background-item-2-tablet.png");
+    background-image: -webkit-image-set(url("../img/catalog/background-item-2-tablet.webp") 1x, url("../img/catalog/background-item-2-tablet@2x.webp") 2x, url("../img/catalog/background-item-2-tablet.png") 1x, url("../img/catalog/background-item-2-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/catalog/background-item-2-tablet.webp") 1x, url("../img/catalog/background-item-2-tablet@2x.webp") 2x, url("../img/catalog/background-item-2-tablet.png") 1x, url("../img/catalog/background-item-2-tablet@2x.png") 2x);
   }
 
   .catalog__item--three {
     background-image: url("../img/catalog/background-item-3-tablet.png");
+    background-image: -webkit-image-set(url("../img/catalog/background-item-3-tablet.webp") 1x, url("../img/catalog/background-item-3-tablet@2x.webp") 2x, url("../img/catalog/background-item-3-tablet.png") 1x, url("../img/catalog/background-item-3-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/catalog/background-item-3-tablet.webp") 1x, url("../img/catalog/background-item-3-tablet@2x.webp") 2x, url("../img/catalog/background-item-3-tablet.png") 1x, url("../img/catalog/background-item-3-tablet@2x.png") 2x);
   }
 
   .feedback {
@@ -2086,6 +2092,8 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-tablet.png");
     background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-tablet.png");
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-tablet.png");
+    background-image: -webkit-image-set(url("../img/background-tablet.webp") 1x, url("../img/background-tablet@2x.webp") 2x, url("../img/background-tablet.png") 1x, url("../img/background-tablet@2x.png") 2x);
+    background-image: image-set(url("../img/background-tablet.webp") 1x, url("../img/background-tablet@2x.webp") 2x, url("../img/background-tablet.png") 1x, url("../img/background-tablet@2x.png") 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -2144,9 +2152,9 @@ button,
   }
 
   .about__wrapper::before {
-    -webkit-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    transform: translateX(0px);
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   .about__wrapper h2 {
@@ -2282,6 +2290,8 @@ button,
     background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/background-mobile.png");
     background: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-mobile.png");
     background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/background-mobile.png");
+    background-image: -webkit-image-set(url("../img/background-mobile.webp") 1x, url("../img/background-mobile@2x.webp") 2x, url("../img/background-mobile.png") 1x, url("../img/background-mobile@2x.png") 2x);
+    background-image: image-set(url("../img/background-mobile.webp") 1x, url("../img/background-mobile@2x.webp") 2x, url("../img/background-mobile.png") 1x, url("../img/background-mobile@2x.png") 2x);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -2345,7 +2355,6 @@ button,
   }
 
   .advantage__item {
-    max-width: 270px;
     max-width: 320px;
     width: 100%;
     min-height: 325px;
@@ -2440,7 +2449,7 @@ button,
   .catalog__item::before {
     width: 40px;
     height: 40px;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 3px 0 0 0;
   }
 
   .catalog__item::after {
@@ -2460,14 +2469,20 @@ button,
 
   .catalog__item--one {
     background-image: url("../img/catalog/background-item-1-mobile.png");
+    background-image: -webkit-image-set(url("../img/catalog/background-item-1-mobile.webp") 1x, url("../img/catalog/background-item-1-mobile@2x.webp") 2x, url("../img/catalog/background-item-1-mobile.png") 1x, url("../img/catalog/background-item-1-mobile@2x.png") 2x);
+    background-image: image-set(url("../img/catalog/background-item-1-mobile.webp") 1x, url("../img/catalog/background-item-1-mobile@2x.webp") 2x, url("../img/catalog/background-item-1-mobile.png") 1x, url("../img/catalog/background-item-1-mobile@2x.png") 2x);
   }
 
   .catalog__item--two {
     background-image: url("../img/catalog/background-item-2-mobile.png");
+    background-image: -webkit-image-set(url("../img/catalog/background-item-2-mobile.webp") 1x, url("../img/catalog/background-item-2-mobile@2x.webp") 2x, url("../img/catalog/background-item-2-mobile.png") 1x, url("../img/catalog/background-item-2-mobile@2x.png") 2x);
+    background-image: image-set(url("../img/catalog/background-item-2-mobile.webp") 1x, url("../img/catalog/background-item-2-mobile@2x.webp") 2x, url("../img/catalog/background-item-2-mobile.png") 1x, url("../img/catalog/background-item-2-mobile@2x.png") 2x);
   }
 
   .catalog__item--three {
     background-image: url("../img/catalog/background-item-3-mobile.png");
+    background-image: -webkit-image-set(url("../img/catalog/background-item-3-mobile.webp") 1x, url("../img/catalog/background-item-3-mobile@2x.webp") 2x, url("../img/catalog/background-item-3-mobile.png") 1x, url("../img/catalog/background-item-3-mobile@2x.png") 2x);
+    background-image: image-set(url("../img/catalog/background-item-3-mobile.webp") 1x, url("../img/catalog/background-item-3-mobile@2x.webp") 2x, url("../img/catalog/background-item-3-mobile.png") 1x, url("../img/catalog/background-item-3-mobile@2x.png") 2x);
   }
 
   .feedback {

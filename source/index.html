@@ -7,6 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
   <title>ProjectName</title>
+  <link rel="preload" href="fonts/pt-mono-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/pt-mono-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/roboto-condensed-bold.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -18,7 +24,7 @@
           <a>
             <picture>
               <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-              <img src="img/svg/logo.svg" width="215" height="55" alt="">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="логотип">
             </picture>
           </a>
         </div>
@@ -124,17 +130,17 @@
           <p><span class="catalog__wrapper-title-desktop">Smart Device предлагает следующие товары и&nbsp;услуги</span><span class="catalog__wrapper-title-mobile" >Товары и услуги Smart&nbsp;Device</span></p>
           <ul class="catalog__list">
             <li class="catalog__item catalog__item--one">
-              <a href="#">
+              <a href="sitemap.html">
                 <p>Производство печатных плат</p>
               </a>
             </li>
             <li class="catalog__item catalog__item--two">
-              <a href="#">
+              <a href="sitemap.html">
                 <p>Монтаж печатных плат</p>
               </a>
             </li>
             <li class="catalog__item catalog__item--three">
-              <a href="#">
+              <a href="sitemap.html">
                 <p>Комплектующие для&nbsp;светотехники</p>
               </a>
             </li>
@@ -146,7 +152,11 @@
         <h2 class="visually-hidden">Обратная связь</h2>
         <div class="feedback__wrapper container">
           <div class="feedback__paper-airplane">
-            <img src="img/paper-airplane-desktop.png" width="510" height="285" alt="Бумажный самолет">
+            <picture>
+              <source type="image/webp"
+                srcset="img/paper-airplane-desktop.webp 1x, img/paper-airplane-desktop@2x.webp 2x">
+              <img src="img/paper-airplane-desktop.png" srcset="img/paper-airplane-desktop@2x.png" loading="lazy" width="510" height="285" alt="Бумажный самолет">
+            </picture>
           </div>
           <div class="feedback__inner">
             <h3>Остались вопросы? Задайте их нам!</h3>
@@ -160,8 +170,7 @@
                 </div>
                 <div class="form__input-inner">
                   <label>
-                    <input type="tel" name="user-tel" placeholder="Телефон" pattern="^[+0-9]*$"
-                      title="Можно вводить только числа" required>
+                    <input type="tel" name="user-tel" placeholder="Телефон" data-phone-pattern required>
                   </label>
                 </div>
               </div>
@@ -180,7 +189,6 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="page-footer">
@@ -220,25 +228,25 @@
             <nav class="navigation__main-nav main-nav">
               <ul class="main-nav__list">
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">О Компаниии</a>
+                  <a class="main-nav__link" href="sitemap.html">О Компаниии</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Продукты</a>
+                  <a class="main-nav__link" href="sitemap.html">Продукты</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Протзводство печатных плат</a>
+                  <a class="main-nav__link" href="sitemap.html">Протзводство печатных плат</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Монтаж печатных плат</a>
+                  <a class="main-nav__link" href="sitemap.html">Монтаж печатных плат</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Комплектующие</a>
+                  <a class="main-nav__link" href="sitemap.html">Комплектующие</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Доставка</a>
+                  <a class="main-nav__link" href="sitemap.html">Доставка</a>
                 </li>
                 <li class="main-nav__item">
-                  <a class="main-nav__link" href="#">Контакты</a>
+                  <a class="main-nav__link" href="sitemap.html">Контакты</a>
                 </li>
               </ul>
             </nav>
@@ -271,12 +279,12 @@
             <div class="modal-feedback__form-personal-info-inner">
               <div class="modal-feedback__form-input-inner">
                 <label>
-                  <input type="text" name="user-name" placeholder="Имя" required data-user-name>
+                  <input type="text" name="user-name" placeholder="Имя" autofocus required data-user-name>
                 </label>
               </div>
               <div class="modal-feedback__form-input-inner">
                 <label>
-                  <input type="tel" name="user-tel" placeholder="Телефон" required>
+                  <input type="tel" name="user-tel" placeholder="Телефон" required data-phone-pattern>
                 </label>
               </div>
             </div>

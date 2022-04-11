@@ -1,4 +1,5 @@
 import MoveTo from 'moveto';
+
 const moveTo = new MoveTo({
   duration: 1000,
 });
