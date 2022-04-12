@@ -15,7 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   scrollSmooth();
-  setFocus();
   setMaskTel();
 
   // Modules
@@ -29,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     hideText();
     showMenu();
     showContacts();
+    setFocus();
   });
 });
 
