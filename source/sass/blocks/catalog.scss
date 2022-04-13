@@ -17,12 +17,9 @@
   flex-direction: column;
   gap: 50px;
 
-  @include vp-1279 {
-    max-width: 770px
-  }
-
   @include vp-1023 {
     gap: 38px;
+    max-width: 770px
   }
 
   @include vp-767 {
@@ -67,14 +64,10 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 85px;
+  gap: 30px 85px;
+  justify-content: center;
 
-  @include vp-1439 {
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  @include vp-1279 {
+  @include vp-1023 {
     flex-direction: column;
     gap: 30px;
     align-items: center;
@@ -118,7 +111,7 @@
     transform: rotate(45deg);
   }
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding: 38px 45px;
     min-height: 250px;
     width: 670px;
@@ -177,7 +170,7 @@
     url("../img/catalog/background-item-1-desktop@2x.png") 2x
   );
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: image-set(
       url("../img/catalog/background-item-1-tablet.webp") 1x,
       url("../img/catalog/background-item-1-tablet@2x.webp") 2x,
@@ -204,7 +197,7 @@
     url("../img/catalog/background-item-2-desktop@2x.png") 2x
     );
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: image-set(
       url("../img/catalog/background-item-2-tablet.webp") 1x,
       url("../img/catalog/background-item-2-tablet@2x.webp") 2x,
@@ -231,7 +224,7 @@
     url("../img/catalog/background-item-3-desktop@2x.png") 2x
   );
 
-  @include vp-1279 {
+  @include vp-1023 {
     background-image: image-set(
       url("../img/catalog/background-item-3-tablet.webp") 1x,
       url("../img/catalog/background-item-3-tablet@2x.webp") 2x,

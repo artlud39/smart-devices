@@ -13,7 +13,7 @@
   padding-right: 47px;
   min-height: 880px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     min-height: 640px;
     background: $white-pearl-to-bottom, url("../img/background-tablet.png");
     background-image: $white-pearl-to-bottom, image-set(
@@ -54,7 +54,7 @@
 
 
 
-  @include vp-1279 {
+  @include vp-1023 {
     gap: 0;
     margin-top: 180px;
     padding-left: 50px;
@@ -76,7 +76,7 @@
   color: $color-alice-blue;
   margin: 0;
 
-  @include vp-1279 {
+  @include vp-1023 {
     font-size: 64px;
     line-height: 75px;
   }
@@ -97,7 +97,7 @@
   padding-bottom: 15px;
   max-width: 685px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     padding-bottom: 57px;
   }
 
@@ -126,7 +126,7 @@
   margin-bottom: 280px;
   user-select: none;
 
-  @include vp-1279 {
+  @include vp-1023 {
     margin-left: 45px;
     margin-bottom: 205px;
   }

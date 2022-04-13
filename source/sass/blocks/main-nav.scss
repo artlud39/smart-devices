@@ -5,6 +5,7 @@
   display: block;
   column-count: 2;
   column-width: 220px;
+  column-gap: 30px;
 
   @include vp-1023 {
     grid-template-columns: 220px;

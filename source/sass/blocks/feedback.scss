@@ -3,11 +3,8 @@
   background: linear-gradient(-41deg, $color-deep-sky-blue 66%, rgba(4, 24, 39, 0.5) 33%);
   background-color: $color-deep-sky-blue;
 
-  @include vp-1279 {
-    background: $color-deep-sky-blue;
-  }
-
   @include vp-1023 {
+    background: $color-deep-sky-blue;
     padding: 52px 0 125px;
   }
 
@@ -21,17 +18,18 @@
   align-items: center;
   max-width: 1280px;
   justify-content: space-between;
+  gap: 30px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     justify-content: center;
   }
 }
 
 .feedback__paper-airplane {
-  width: max-content;
+  min-width: fit-content;
   padding-top: 30px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     display: none;
   }
 }
@@ -48,7 +46,7 @@
   font-weight: 400;
   max-width: 580px;
 
-  @include vp-1279 {
+  @include vp-1023 {
     max-width: 670px;
   }
 }
