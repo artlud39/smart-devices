@@ -112,3 +112,23 @@
     display: grid;
   }
 }
+
+.contacts--no-js {
+
+  @include vp-767 {
+    gap: 0;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    padding: 0 25px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.contacts--no-js ul {
+  @include vp-767 {
+    display: grid;
+  }
+}

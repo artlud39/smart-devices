@@ -160,6 +160,7 @@
   padding: 0;
   cursor: pointer;
   order: 1;
+  user-select: none;
 
   &:hover,
   &:focus {

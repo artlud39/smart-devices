@@ -4,12 +4,17 @@
   flex-direction: column;
   gap: 20px;
 
+  @include vp-1279 {
+    max-width: 220px;
+  }
+
   @include vp-767 {
     justify-content: center;
     gap: 0;
     border-top: 1px solid rgba(248, 253, 255, 0.7);
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
     padding: 0 25px;
+    max-width: 100%;
 
     &::before,
     &::after {
@@ -77,6 +82,26 @@
 }
 
 .is-open ul {
+  @include vp-767 {
+    display: grid;
+  }
+}
+
+.navigation--no-js {
+
+  @include vp-767 {
+    gap: 0;
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    padding: 0 25px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.navigation--no-js ul {
   @include vp-767 {
     display: grid;
   }

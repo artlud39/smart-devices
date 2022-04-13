@@ -3,7 +3,7 @@
   background: linear-gradient(-41deg, $color-deep-sky-blue 66%, rgba(4, 24, 39, 0.5) 33%);
   background-color: $color-deep-sky-blue;
 
-  @include vp-1439 {
+  @include vp-1279 {
     background: $color-deep-sky-blue;
   }
 
@@ -22,7 +22,7 @@
   max-width: 1280px;
   justify-content: space-between;
 
-  @include vp-1439 {
+  @include vp-1279 {
     justify-content: center;
   }
 }
@@ -31,7 +31,7 @@
   width: max-content;
   padding-top: 30px;
 
-  @include vp-1439 {
+  @include vp-1279 {
     display: none;
   }
 }
@@ -48,7 +48,7 @@
   font-weight: 400;
   max-width: 580px;
 
-  @include vp-1439 {
+  @include vp-1279 {
     max-width: 670px;
   }
 }

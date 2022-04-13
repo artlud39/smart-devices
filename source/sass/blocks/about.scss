@@ -27,6 +27,10 @@
   }
 
   @include vp-1439 {
+    padding-left: 257px;
+  }
+
+  @include vp-1279 {
     padding-left: 180px;
   }
 
@@ -130,6 +134,7 @@
   color: $color-deep-sky-blue;
   padding: 0;
   cursor: pointer;
+  user-select: none;
 
   &:hover,
   &:focus {
