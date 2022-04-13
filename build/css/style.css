@@ -2381,7 +2381,7 @@ button,
   }
 
   .advantage {
-    padding: 50px 0 80px;
+    padding: 50px 0 45px;
   }
 
   .advantage__wrapper {
@@ -2406,11 +2406,16 @@ button,
     max-width: 100%;
     min-width: 270px;
     min-height: 325px;
-    padding: 30px 30px 35px 30px;
+    padding: 28px 30px 35px 25px;
   }
 
   .advantage__item:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  .advantage__item:nth-child(1),
+  .advantage__item:nth-child(2) {
+    min-height: 340px;
   }
 
   .advantage__item svg {
@@ -2463,7 +2468,7 @@ button,
   }
 
   .catalog {
-    padding: 45px 0 82px;
+    padding: 45px 0 86px;
   }
 
   .catalog__wrapper {
